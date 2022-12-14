@@ -40,4 +40,3 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=algo-sanket&show_icons=true&locale=en" alt="algo-sanket" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=algo-sanket&" alt="algo-sanket" /></p>
-https://github-profile-trophy.vercel.app/?username=ryo-ma&column=3&margin-w=15&margin-h=15
