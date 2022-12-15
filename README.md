@@ -7,7 +7,7 @@
 
 <p align="left"> <a href="https://twitter.com/@sankets57590607" target="blank"><img src="https://img.shields.io/twitter/follow/@sankets57590607?logo=twitter&style=for-the-badge" alt="@sankets57590607" /></a> </p>
 
-[![trophy](https://github-profile-trophy.vercel.app/?Algo-Sanket)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://github-profile-trophy.vercel.app/?Algo-Sanket)](https://github.com/Algo-Sanket/github-profile-trophy)
 
 - 🔭 I’m currently working on **IOT Based Bus Tracking and Survillance**
 
