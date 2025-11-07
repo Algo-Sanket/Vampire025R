@@ -1,160 +1,230 @@
-# 👨‍💻 SANKET SRIVASTAVA
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Profile Animation - Record as GIF</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<div align="center">
-  
-### 🚀 Frontend Developer | 🎮 Game Dev Enthusiast | 🌏 India
+        body {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e22ce 100%);
+            overflow: hidden;
+            font-family: 'Courier New', monospace;
+        }
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=3B82F6&center=true&vCenter=true&width=600&lines=Crafting+Digital+Experiences;Building+Interactive+Solutions;Passionate+About+Clean+Code)](https://git.io/typing-svg)
+        #canvas-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
 
-</div>
+        .info {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 14px;
+            z-index: 10;
+            backdrop-filter: blur(10px);
+        }
 
----
+        .info h2 {
+            margin-bottom: 10px;
+            color: #60a5fa;
+        }
 
-## 🎯 About Me
+        .info p {
+            margin: 5px 0;
+            line-height: 1.6;
+        }
 
-```javascript
-const sanket = {
-    location: "India 🇮🇳",
-    role: "Frontend Developer",
-    currentFocus: "IoT-Based Bus Tracking & Surveillance System",
-    learning: ["C++", "C", "C#"],
-    expertise: ["Java", "Data Structures", "Game Development"],
-    lookingFor: "Backend Development Collaboration",
-    funFact: "Still figuring things out... and that's the fun part! 🎲"
-};
-```
+        .record-btn {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+            z-index: 10;
+        }
 
----
+        .record-btn:hover {
+            transform: translateX(-50%) scale(1.05);
+        }
 
-## 🔥 Current Mission
+        .floating-text {
+            position: absolute;
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 0 0 20px rgba(96, 165, 250, 0.8);
+            pointer-events: none;
+            animation: fadeInOut 4s infinite;
+        }
 
-<table>
-<tr>
-<td width="50%">
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0; transform: translateY(20px); }
+            10%, 90% { opacity: 1; transform: translateY(0); }
+        }
 
-### 🚌 IoT Bus Tracking System
-Building an intelligent surveillance and tracking solution that combines:
-- Real-time GPS tracking
-- Live surveillance integration
-- Smart notification systems
-- Data analytics dashboard
+        .name-text {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 64px;
+            background: linear-gradient(45deg, #60a5fa, #c084fc, #f472b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    
+    <div class="info">
+        <h2>🎬 How to Create Your GIF</h2>
+        <p>1. <strong>Windows:</strong> Use ScreenToGif (free)</p>
+        <p>2. <strong>Mac:</strong> Use Gifski or Kap</p>
+        <p>3. <strong>Online:</strong> Use Screentogif.com</p>
+        <p><br>📹 Record this animation for 5-10 seconds</p>
+        <p>💾 Save as GIF and upload to your repo</p>
+    </div>
 
-</td>
-<td width="50%">
+    <div class="name-text">SANKET SRIVASTAVA</div>
 
-### 🎯 Learning Journey
-Diving deep into systems programming:
-- **C++** for performance optimization
-- **C** for low-level understanding
-- **C#** for versatile development
+    <button class="record-btn" onclick="changeColors()">🎨 Change Colors</button>
 
-</td>
-</tr>
-</table>
+    <script>
+        let scene, camera, renderer, particles, cube, torus;
+        let colorScheme = 0;
 
----
+        function init() {
+            scene = new THREE.Scene();
+            
+            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            camera.position.z = 30;
 
-## 💡 What I Bring to the Table
+            renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setClearColor(0x000000, 0);
+            document.getElementById('canvas-container').appendChild(renderer.domElement);
 
-<div align="center">
+            // Create particle system
+            const particleGeometry = new THREE.BufferGeometry();
+            const particleCount = 1000;
+            const positions = new Float32Array(particleCount * 3);
 
-| 💻 Frontend Magic | 🎮 Game Development | 📊 Data Structures | ☕ Java Expertise |
-|:-----------------:|:------------------:|:-----------------:|:----------------:|
-| Responsive UIs | Interactive Gameplay | Algorithm Design | Robust Backend Logic |
-| Modern Frameworks | Physics & Graphics | Optimization | Design Patterns |
+            for(let i = 0; i < particleCount * 3; i++) {
+                positions[i] = (Math.random() - 0.5) * 100;
+            }
 
-</div>
+            particleGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+            const particleMaterial = new THREE.PointsMaterial({
+                color: 0x60a5fa,
+                size: 0.3,
+                transparent: true,
+                opacity: 0.8
+            });
 
----
+            particles = new THREE.Points(particleGeometry, particleMaterial);
+            scene.add(particles);
 
-## 🤝 Let's Collaborate!
+            // Create rotating cube
+            const cubeGeometry = new THREE.BoxGeometry(8, 8, 8);
+            const cubeMaterial = new THREE.MeshPhongMaterial({
+                color: 0x667eea,
+                transparent: true,
+                opacity: 0.7,
+                wireframe: true
+            });
+            cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
+            scene.add(cube);
 
-<div align="center">
+            // Create torus
+            const torusGeometry = new THREE.TorusGeometry(12, 2, 16, 100);
+            const torusMaterial = new THREE.MeshPhongMaterial({
+                color: 0xc084fc,
+                transparent: true,
+                opacity: 0.5,
+                wireframe: true
+            });
+            torus = new THREE.Mesh(torusGeometry, torusMaterial);
+            scene.add(torus);
 
-### 🔍 **Actively Seeking Backend Wizards!**
+            // Lights
+            const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+            scene.add(ambientLight);
 
-Got experience with APIs, databases, or server-side magic?  
-Let's build something **EPIC** together! 🚀
+            const pointLight = new THREE.PointLight(0x60a5fa, 1, 100);
+            pointLight.position.set(10, 10, 10);
+            scene.add(pointLight);
 
-[![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
-[![Email](https://img.shields.io/badge/Email_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:srivastavasanket95@gmail.com)
+            const pointLight2 = new THREE.PointLight(0xc084fc, 1, 100);
+            pointLight2.position.set(-10, -10, 10);
+            scene.add(pointLight2);
 
-</div>
+            window.addEventListener('resize', onWindowResize, false);
+        }
 
----
+        function animate() {
+            requestAnimationFrame(animate);
 
-## 🛠️ Tech Arsenal
+            particles.rotation.y += 0.001;
+            particles.rotation.x += 0.0005;
 
-<div align="center">
+            cube.rotation.x += 0.01;
+            cube.rotation.y += 0.01;
 
-### Languages
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+            torus.rotation.x += 0.005;
+            torus.rotation.y += 0.008;
 
-### Frontend
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+            renderer.render(scene, camera);
+        }
 
-### Tools & Platforms
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
+        function onWindowResize() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
 
-</div>
+        function changeColors() {
+            colorScheme = (colorScheme + 1) % 3;
+            
+            if(colorScheme === 0) {
+                particles.material.color.setHex(0x60a5fa);
+                cube.material.color.setHex(0x667eea);
+                torus.material.color.setHex(0xc084fc);
+            } else if(colorScheme === 1) {
+                particles.material.color.setHex(0x10b981);
+                cube.material.color.setHex(0x06b6d4);
+                torus.material.color.setHex(0x8b5cf6);
+            } else {
+                particles.material.color.setHex(0xf59e0b);
+                cube.material.color.setHex(0xef4444);
+                torus.material.color.setHex(0xec4899);
+            }
+        }
 
----
-
-## 📈 GitHub Stats
-
-<div align="center">
-  
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=YourGitHubUsername&theme=radical&hide_border=true)
-
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=YourGitHubUsername&show_icons=true&theme=radical&hide_border=true" />
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YourGitHubUsername&layout=compact&theme=radical&hide_border=true" />
-
-</div>
-
----
-
-## 💭 Dev Quote of the Day
-
-<div align="center">
-
-![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
-</div>
-
----
-
-## 🎮 When I'm Not Coding...
-
-```
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-█ Gaming 🎮          ████████████░░░░ 75%
-█ Learning 📚        ██████████████░░ 85%
-█ Building IoT 🔧    ███████████░░░░░ 70%
-█ Coffee Breaks ☕   ████████████████ 99%
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-```
-
----
-
-<div align="center">
-
-### ⭐ If you like what you see, drop a star on my projects!
-
-**"Code is like humor. When you have to explain it, it's bad."** – Cory House
-
-### 📊 Profile Views
-![Visitor Count](https://profile-counter.glitch.me/YourGitHubUsername/count.svg)
-
----
-
-*💌 Open to opportunities | 🚀 Always learning | 🎯 Building the future*
-
-</div>
+        init();
+        animate();
+    </script>
+</body>
+</html>
