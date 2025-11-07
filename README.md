@@ -1,43 +1,160 @@
-<h1 align="center">Hi 👋, I'm SANKET SRIVASTAVA</h1>
-<h3 align="center">A passionate frontend developer from India</h3>
+# 👨‍💻 SANKET SRIVASTAVA
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=algo-sanket&label=Profile%20views&color=0e75b6&style=flat" alt="algo-sanket" /> </p>
+<div align="center">
+  
+### 🚀 Frontend Developer | 🎮 Game Dev Enthusiast | 🌏 India
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=algo-sanket" alt="algo-sanket" /></a> </p>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=3B82F6&center=true&vCenter=true&width=600&lines=Crafting+Digital+Experiences;Building+Interactive+Solutions;Passionate+About+Clean+Code)](https://git.io/typing-svg)
 
+</div>
 
-<p align="left"> <a href="https://twitter.com/@sankets57590607" target="blank"><img src="https://img.shields.io/twitter/follow/@sankets57590607?logo=twitter&style=for-the-badge" alt="@sankets57590607" /></a> </p>
+---
 
-- 🔭 I’m currently working on **IOT Based Bus Tracking and Survillance**
+## 🎯 About Me
 
-- 🌱 I’m currently learning **C++, C < C#**
+```javascript
+const sanket = {
+    location: "India 🇮🇳",
+    role: "Frontend Developer",
+    currentFocus: "IoT-Based Bus Tracking & Surveillance System",
+    learning: ["C++", "C", "C#"],
+    expertise: ["Java", "Data Structures", "Game Development"],
+    lookingFor: "Backend Development Collaboration",
+    funFact: "Still figuring things out... and that's the fun part! 🎲"
+};
+```
 
-- 👯 I’m looking to collaborate on **Linkedln**
+---
 
-- 🤝 I’m looking for help with **Backend Work**
+## 🔥 Current Mission
 
-- 💬 Ask me about **JAVA, Data structure, Game Development**
+<table>
+<tr>
+<td width="50%">
 
-- 📫 How to reach me **srivastavasanket95@gmail.com**
+### 🚌 IoT Bus Tracking System
+Building an intelligent surveillance and tracking solution that combines:
+- Real-time GPS tracking
+- Live surveillance integration
+- Smart notification systems
+- Data analytics dashboard
 
-- ⚡ Fun fact **I think I don't Know**
+</td>
+<td width="50%">
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/@sankets57590607" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="@sankets57590607" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/www.linkedin.com/in/sanket-srivastava-1a7581206" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="www.linkedin.com/in/sanket-srivastava-1a7581206" height="30" width="40" /></a>
-<a href="https://www.youtube.com/c/ghostbuster" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="ghostbuster" height="30" width="40" /></a>
-<a href="https://www.hackerrank.com/@2001641550030iot" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="@2001641550030iot" height="30" width="40" /></a>
-<a href="https://www.leetcode.com/sanket025r" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="sanket025r" height="30" width="40" /></a>
-<a href="https://auth.geeksforgeeks.org/user/srivastavan187" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg" alt="srivastavan187" height="30" width="40" /></a>
-<a href="https://discord.gg/https://discord.gg/eEqp7Psw" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="https://discord.gg/eEqp7Psw" height="30" width="40" /></a>
-</p>
+### 🎯 Learning Journey
+Diving deep into systems programming:
+- **C++** for performance optimization
+- **C** for low-level understanding
+- **C#** for versatile development
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> </a> <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.oracle.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a> <a href="https://unrealengine.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg" alt="unreal" width="40" height="40"/> </a> </p>
+</td>
+</tr>
+</table>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=algo-sanket&show_icons=true&locale=en&layout=compact" alt="algo-sanket" /></p>
+---
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=algo-sanket&show_icons=true&locale=en" alt="algo-sanket" /></p>
+## 💡 What I Bring to the Table
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=algo-sanket&" alt="algo-sanket" /></p>
+<div align="center">
+
+| 💻 Frontend Magic | 🎮 Game Development | 📊 Data Structures | ☕ Java Expertise |
+|:-----------------:|:------------------:|:-----------------:|:----------------:|
+| Responsive UIs | Interactive Gameplay | Algorithm Design | Robust Backend Logic |
+| Modern Frameworks | Physics & Graphics | Optimization | Design Patterns |
+
+</div>
+
+---
+
+## 🤝 Let's Collaborate!
+
+<div align="center">
+
+### 🔍 **Actively Seeking Backend Wizards!**
+
+Got experience with APIs, databases, or server-side magic?  
+Let's build something **EPIC** together! 🚀
+
+[![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
+[![Email](https://img.shields.io/badge/Email_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:srivastavasanket95@gmail.com)
+
+</div>
+
+---
+
+## 🛠️ Tech Arsenal
+
+<div align="center">
+
+### Languages
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+### Frontend
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+
+### Tools & Platforms
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
+
+</div>
+
+---
+
+## 📈 GitHub Stats
+
+<div align="center">
+  
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=YourGitHubUsername&theme=radical&hide_border=true)
+
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=YourGitHubUsername&show_icons=true&theme=radical&hide_border=true" />
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YourGitHubUsername&layout=compact&theme=radical&hide_border=true" />
+
+</div>
+
+---
+
+## 💭 Dev Quote of the Day
+
+<div align="center">
+
+![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+
+</div>
+
+---
+
+## 🎮 When I'm Not Coding...
+
+```
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+█ Gaming 🎮          ████████████░░░░ 75%
+█ Learning 📚        ██████████████░░ 85%
+█ Building IoT 🔧    ███████████░░░░░ 70%
+█ Coffee Breaks ☕   ████████████████ 99%
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+```
+
+---
+
+<div align="center">
+
+### ⭐ If you like what you see, drop a star on my projects!
+
+**"Code is like humor. When you have to explain it, it's bad."** – Cory House
+
+### 📊 Profile Views
+![Visitor Count](https://profile-counter.glitch.me/YourGitHubUsername/count.svg)
+
+---
+
+*💌 Open to opportunities | 🚀 Always learning | 🎯 Building the future*
+
+</div>
